@@ -1,0 +1,28 @@
+<form method="POST" action="/posts">
+    <h4><label>Whats New? </label></h4><br><br>
+    <input type="text" name="content" size="100" class="searchBar"><br><br>
+    <input type="submit" value="Post" class="button"><br><br>
+</form>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+  color: lime ;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+</style>
+<p style ="text-align:center"><a href="/posts">Goto HomePage</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="/posts/<%=@producer.username%>">My Profile</a></p>
